@@ -1,3 +1,17 @@
+div.home {
+    background: url(assets/homecover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    align-content: center;
+}   
+
+.home section {
+    text-align: center;
+    color: white;
+}
+
 .home h1 {
-    color: red;
+    font-size: 7rem;
+    margin: 0;
 }
