@@ -15,7 +15,7 @@ const text = (() => {
 
 const appendHome = () => {
     contentDOM.appendChild(textDOMs.section);
-    contentDOM.className = "home"    
+    contentDOM.className = "home";    
 }
 
 export {appendHome};
