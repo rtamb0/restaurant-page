@@ -6,7 +6,7 @@ div.home {
     align-content: center;
 }   
 
-.headHome section {
+section.headHome {
     text-align: center;
     color: white;
 }
