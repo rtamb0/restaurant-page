@@ -3,7 +3,7 @@ const contentDOM = document.querySelector('#content');
 const headDOMs = {
     header: document.createElement('h1'),
     description: document.createElement('p'),
-    headSection: document.createElement('section'),
+    section: document.createElement('section'),
 }
 
 const bodyDOMs = {
@@ -12,9 +12,9 @@ const bodyDOMs = {
 
 const headText = (() => {
     headDOMs.header.innerHTML = 'Lorem Ipsum';
-    headDOMs.headSection.appendChild(headDOMs.header)
+    headDOMs.section.appendChild(headDOMs.header)
     headDOMs.description.innerHTML = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
-    headDOMs.headSection.appendChild(headDOMs.description);
+    headDOMs.section.appendChild(headDOMs.description);
 })();
 
 const bodyText = (() => {
@@ -22,7 +22,7 @@ const bodyText = (() => {
 })();
 
 const appendHome = () => {
-    contentDOM.appendChild(headDOMs.headSection);
+    contentDOM.appendChild(headDOMs.section);
     contentDOM.className = "home";    
 }
 
