@@ -7,7 +7,7 @@ const headDOMs = {
 }
 
 const bodyDOMs = {
-    bodySection: document.createElement('section'),
+    section: document.createElement('section'),
 }
 
 const headText = (() => {
