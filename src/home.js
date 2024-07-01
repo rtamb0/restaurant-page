@@ -3,18 +3,19 @@ const contentDOM = document.querySelector('#content');
 const textDOMs = {
     header: document.createElement('h1'),
     description: document.createElement('p'),
-    section: document.createElement('section'),
+    headSection: document.createElement('section'),
+    bodySection: document.createElement('section'),
 }
 
-const text = (() => {
+const headText = (() => {
     textDOMs.header.innerHTML = 'Lorem Ipsum';
-    textDOMs.section.appendChild(textDOMs.header)
+    textDOMs.headSection.appendChild(textDOMs.header)
     textDOMs.description.innerHTML = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
-    textDOMs.section.appendChild(textDOMs.description);
+    textDOMs.headSection.appendChild(textDOMs.description);
 })();
 
 const appendHome = () => {
-    contentDOM.appendChild(textDOMs.section);
+    contentDOM.appendChild(textDOMs.headSection);
     contentDOM.className = "home";    
 }
 
