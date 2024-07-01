@@ -1,17 +1,53 @@
-div.home {
+section.headHome {
+    height: 75vh;
+    text-align: center;
+    color: white;    
     background: url(assets/homecover.jpg);
     background-size: cover;
     background-position: center;
-    height: 75vh;
     align-content: center;
-}   
-
-section.headHome {
-    text-align: center;
-    color: white;
 }
 
 .headHome h1 {
     font-size: 7rem;
     margin: 0;
+}
+
+.headhome p {
+    font-size: 1rem;
+}
+
+.bodyHome {
+    display: grid;
+    grid-template-columns: repeat(2, 28rem);
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    padding: 100px;
+}
+
+.bodyHome div {
+    background-color: beige;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.bodyHome div:nth-child(2n+0) {
+    grid-column: 2;
+}
+
+.bodyHome div:nth-child(1) {
+    grid-row: 1;
+}
+
+.bodyHome div:nth-child(2) {
+    grid-row: 2;
+}
+
+.bodyHome div:nth-child(3) {
+    grid-row: 3;
+}
+
+.bodyHome p {
+    width: 400px;
 }
