@@ -2,11 +2,11 @@ const contentDOM = document.querySelector('#content');
 
 // Function to generate header
 const headContent = (title, text) => {
-    header = document.createElement('h1');
+    const header = document.createElement('h1');
     header.innerHTML = title;
-    description = document.createElement('p');
+    const description = document.createElement('p');
     description.innerHTML = text;
-    section = document.createElement('section');
+    const section = document.createElement('section');
     section.appendChild(header);
     section.appendChild(description);
     section.className = 'headHome';
@@ -15,11 +15,11 @@ const headContent = (title, text) => {
 
 // Function to generate body content
 const bodyContent = (title, text) => {
-    header = document.createElement('h3');
+    const header = document.createElement('h3');
     header.innerHTML = title;
-    description = document.createElement('p');
+    const description = document.createElement('p');
     description.innerHTML = text;
-    section = document.createElement('section');
+    const section = document.createElement('section');
     section.appendChild(header);
     section.appendChild(description);
     section.className = 'bodyHome';
