@@ -1,6 +1,7 @@
 import 'normalize.css';
 import './style.css';
 import { appendHome } from "./home";
+import { appendMenu } from './menu';
 
 const contentDOM = document.querySelector('#content');
 
@@ -21,6 +22,13 @@ const eventListeners = (() => {
         else {
             removeContent();
             appendHome();
+        };
+    });
+    buttonDOMs.menu.addEventListener('click', () => {
+        if (contentDOM.className === 'menu') return
+        else {
+            removeContent();
+            appendMenu();
         };
     });
 })();
