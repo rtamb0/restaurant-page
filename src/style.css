@@ -1,3 +1,7 @@
+body {
+    background-color: peru;
+}
+
 section.headHome {
     height: 75vh;
     text-align: center;
