@@ -6,12 +6,12 @@ div.home {
     align-content: center;
 }   
 
-.home section {
+.headHome section {
     text-align: center;
     color: white;
 }
 
-.home h1 {
+.headHome h1 {
     font-size: 7rem;
     margin: 0;
 }
