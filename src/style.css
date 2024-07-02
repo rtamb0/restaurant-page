@@ -54,12 +54,20 @@ section.headHome {
 
 .menu h1 {
     text-align: center;
+    color: white;
+    background-color: burlywood;
+    margin: 0;
+    padding: 2rem;
 }
 
 .bodyMenu {
     display: grid;
     grid-template-columns: repeat(3, 20rem);
-    grid-auto-rows: 35rem;
+    grid-auto-rows: 32rem;
+    gap: 5rem;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 100px;
 }
 
 .bodyMenu img {
