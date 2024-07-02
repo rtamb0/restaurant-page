@@ -1,4 +1,9 @@
 import menu1 from './assets/menu1.jpg';
+import menu2 from './assets/menu1.jpg';
+import menu3 from './assets/menu1.jpg';
+import menu4 from './assets/menu1.jpg';
+import menu5 from './assets/menu1.jpg';
+import menu6 from './assets/menu1.jpg';
 
 const contentDOM = document.querySelector('#content');
 
