@@ -30,7 +30,7 @@ section.headHome {
     padding: 100px;
 }
 
-.bodyHome div {
+.bodyHome div, .bodyMenu div {
     background-color: beige;
     padding: 2rem;
     border-radius: 12px;
@@ -52,6 +52,16 @@ section.headHome {
     grid-row: 3;
 }
 
-.bodyHome p {
-    width: 400px;
+.menu h1 {
+    text-align: center;
+}
+
+.bodyMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    grid-auto-rows: 35rem;
+}
+
+.bodyMenu img {
+    width: 200px;
 }
