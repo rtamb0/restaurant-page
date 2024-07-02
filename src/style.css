@@ -73,3 +73,23 @@ section.headHome {
 .bodyMenu img {
     width: 200px;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
+
+nav {
+    padding: 25px;
+    background-color: black;
+    margin-bottom: 25px;
+}
+
+nav button {
+    padding: 0;
+    width: 50px;
+    border-radius: 12px;
+}
