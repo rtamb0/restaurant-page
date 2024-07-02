@@ -1,9 +1,9 @@
 import menu1 from './assets/menu1.jpg';
-import menu2 from './assets/menu1.jpg';
-import menu3 from './assets/menu1.jpg';
-import menu4 from './assets/menu1.jpg';
-import menu5 from './assets/menu1.jpg';
-import menu6 from './assets/menu1.jpg';
+import menu2 from './assets/menu2.jpg';
+import menu3 from './assets/menu3.jpg';
+import menu4 from './assets/menu4.jpg';
+import menu5 from './assets/menu5.jpg';
+import menu6 from './assets/menu6.jpg';
 
 const contentDOM = document.querySelector('#content');
 
@@ -39,6 +39,11 @@ const appendMenu = () => {
     bodyContainer.className = 'bodyMenu';
     
     bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu1));
+    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu2));
+    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu3));
+    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu4));
+    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu5));
+    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu6));
     contentDOM.appendChild(bodyContainer);
     
     contentDOM.className = "menu";    
