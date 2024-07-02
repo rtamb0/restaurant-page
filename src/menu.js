@@ -1,4 +1,4 @@
-import recipe1 from './assets/recipe1.jpg';
+import menu1 from './assets/menu1.jpg';
 
 const contentDOM = document.querySelector('#content');
 
@@ -24,7 +24,7 @@ const appendMenu = () => {
     const bodyContainer = document.createElement('section');
     bodyContainer.className = 'bodyMenu';
     
-    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", recipe1));
+    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu1));
     contentDOM.appendChild(bodyContainer);
     
     contentDOM.className = "menu";    
