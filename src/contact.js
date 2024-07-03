@@ -34,7 +34,7 @@ const inputContent = (name, type) => {
     const section = document.createElement('div');
     if (type !== 'submit') section.appendChild(label);
     section.appendChild(input);
-    section.className = name;
+    section.className = name.toLowerCase().split(" ").join("");
     
     return section;
 }
