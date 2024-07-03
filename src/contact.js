@@ -10,9 +10,12 @@ const headContent = (title) => {
 
 // Creates the inputs
 const inputContent = (name, type) => {
-    const label = document.createElement('label');
-    label.innerHTML = name;
-    label.setAttribute('for', name);
+    let label;
+    if (type !== 'submit') {
+        label = document.createElement('label');
+        label.innerHTML = name;
+        label.setAttribute('for', name);
+    };
     
     let input;
     if (type === 'textarea') {
@@ -21,14 +24,15 @@ const inputContent = (name, type) => {
         input.setAttribute('columns', "50");
     } else input = document.createElement('input');
     input.setAttribute('type', type);
-    if (type !== 'submit') {
+    if (type === 'submit') input.setAttribute('value', name)
+    else {
         input.setAttribute('id', name);
         input.setAttribute('name', name);
         input.setAttribute('required', "");
     };
     
     const section = document.createElement('div');
-    section.appendChild(label);
+    if (type !== 'submit') section.appendChild(label);
     section.appendChild(input);
     
     return section;
