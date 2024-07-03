@@ -2,6 +2,7 @@ import 'normalize.css';
 import './style.css';
 import { appendHome } from "./home";
 import { appendMenu } from './menu';
+import { appendContact } from './contact';
 
 const contentDOM = document.querySelector('#content');
 
@@ -30,6 +31,13 @@ const eventListeners = (() => {
         else {
             removeContent();
             appendMenu();
+        };
+    });
+    buttonDOMs.contact.addEventListener('click', () => {
+        if (contentDOM.className === 'contact') return
+        else {
+            removeContent();
+            appendContact();
         };
     });
 })();
