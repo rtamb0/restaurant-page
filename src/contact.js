@@ -21,8 +21,11 @@ const inputContent = (name, type) => {
         input.setAttribute('columns', "50");
     } else input = document.createElement('input');
     input.setAttribute('type', type);
-    input.setAttribute('id', name);
-    input.setAttribute('name', name);
+    if (type !== 'submit') {
+        input.setAttribute('id', name);
+        input.setAttribute('name', name);
+        input.setAttribute('required');
+    };
     
     const section = document.createElement('div');
     section.appendChild(label);
@@ -31,3 +34,21 @@ const inputContent = (name, type) => {
     return section;
 }
 
+const appendContact = () => {
+    contentDOM.appendChild(headContent("Contact Us"));
+
+    const inputContainer = document.createElement('form');
+    inputContainer.className = 'contactBody';
+    inputContainer.setAttribute('method', 'get');
+    
+    inputContainer.appendChild(inputContent('Name', 'text'));
+    inputContainer.appendChild(inputContent('Email', 'email'));
+    inputContainer.appendChild(inputContent('Describe here', 'textarea'));
+    inputContainer.appendChild(inputContent('Confirm', 'submit'));
+
+    contentDOM.appendChild(inputContainer);
+    
+    contentDOM.className = "contact";    
+}
+
+export {appendContact};
