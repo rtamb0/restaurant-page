@@ -27,7 +27,7 @@ section.headHome {
     grid-template-rows: repeat(4, 1fr) repeat(1, 1.5fr);
     justify-content: center;
     row-gap: 16px;
-    column-gap: 32px;
+    column-gap: 64px;
     padding: 100px;
 }
 
