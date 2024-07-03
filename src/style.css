@@ -89,6 +89,21 @@ section.headHome {
     width: 200px;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.contact h1 {
+    border-radius: 15px 50px;
+    background-color: burlywood;
+    color: white;
+    padding: 4rem;
+    font-size: 2.5rem;
+}
+
 header {
     display: flex;
     justify-content: center;
