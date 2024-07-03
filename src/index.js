@@ -7,6 +7,7 @@ const contentDOM = document.querySelector('#content');
 
 const removeContent = () => {
     while (contentDOM.lastElementChild) contentDOM.removeChild(contentDOM.lastElementChild);
+    window.scrollTo(0,0);
 }
 
 const buttonDOMs = {
