@@ -83,13 +83,26 @@ header {
 }
 
 nav {
-    padding: 25px;
-    background-color: black;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    align-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: gainsboro;
     margin-bottom: 25px;
+    border-radius: 12px;
 }
 
 nav button {
-    padding: 0;
-    width: 50px;
+    border-style: none;
     border-radius: 12px;
+    padding: 1rem;
+    font-size: 0;
 }
+
+button img {
+    width: 2rem;
+    height: 2rem;
+}
+
