@@ -1,5 +1,13 @@
+:root {
+    --brown: peru;
+    --light-brown: burlywood;
+    --white: white;
+    --vanilla: beige;
+    --grey: gainsboro;
+}
+
 body {
-    background-color: peru;
+    background-color: var(--brown);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -12,7 +20,7 @@ body {
 section.headHome {
     height: 75vh;
     text-align: center;
-    color: white;    
+    color: var(--white);    
     background: url(assets/homecover.jpg);
     background-size: cover;
     background-position: center;
@@ -39,7 +47,7 @@ section.headHome {
 }
 
 .bodyHome div, .bodyMenu div {
-    background-color: beige;
+    background-color: var(--vanilla);
     padding: 2rem;
     border-radius: 12px;
 }
@@ -70,8 +78,8 @@ section.headHome {
 
 .menu h1 {
     text-align: center;
-    color: white;
-    background-color: burlywood;
+    color: var(--white);
+    background-color: var(--light-brown);
     margin: 0;
     padding: 2rem;
 }
@@ -95,12 +103,12 @@ section.headHome {
     align-items: center;
     gap: 48px;
     margin: 50px;
-    color: white;
+    color: var(--white);
 }
 
 .contact h1 {
     border-radius: 15px 50px;
-    background-color: burlywood;
+    background-color: var(--light-brown);
     padding: 4rem;
     font-size: 2.5rem;
 }
@@ -108,7 +116,7 @@ section.headHome {
 .contactBody {
     display: flex;
     flex-direction: column;
-    background-color: burlywood;
+    background-color: var(--light-brown);
     gap: 16px;
     padding: 2rem;
     min-width: 30rem;
@@ -142,7 +150,7 @@ nav {
     align-content: center;
     gap: 1rem;
     padding: 1rem;
-    background-color: gainsboro;
+    background-color: var(--grey);
     margin-bottom: 25px;
     border-radius: 12px;
 }
