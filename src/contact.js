@@ -24,7 +24,7 @@ const inputContent = (name, type) => {
     if (type !== 'submit') {
         input.setAttribute('id', name);
         input.setAttribute('name', name);
-        input.setAttribute('required');
+        input.setAttribute('required', "");
     };
     
     const section = document.createElement('div');
