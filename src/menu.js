@@ -7,6 +7,7 @@ import menu6 from './assets/menu6.jpg';
 
 const contentDOM = document.querySelector('#content');
 
+// Creates the title
 const headContent = (title) => {
     const header = document.createElement('h1');
     header.innerHTML = title;
@@ -14,6 +15,7 @@ const headContent = (title) => {
     return header;
 }
 
+// Creates the menu cards
 const bodyContent = (title, text, pic) => {
     const img = document.createElement('img');
     img.setAttribute('src', pic);
@@ -32,6 +34,7 @@ const bodyContent = (title, text, pic) => {
     return section;
 }
 
+// Calls and appends the elements to the DOM tree
 const appendMenu = () => {
     contentDOM.appendChild(headContent("Our Menu"));
 
