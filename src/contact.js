@@ -31,13 +31,18 @@ const inputs = {
             input = document.createElement('input');
             input.setAttribute('type', type);
         };
-        if (type === 'submit') input.setAttribute('value', name)
-        else {
+        if (type === 'submit') {
+            input.setAttribute('value', name);
+        } else {
             input.setAttribute('id', name);
             input.setAttribute('name', name);
             input.setAttribute('required', "");
         };
         
+        if (type === "text") this.placeholderText("John Smith", input);
+        if (type === "email") this.placeholderText("example@hello.com", input);
+        if (type === "textarea") this.placeholderText("Describe your enquires here...", input);
+
         const section = document.createElement('div');
         if (type !== 'submit') section.appendChild(label);
         section.appendChild(input);
