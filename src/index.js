@@ -3,6 +3,7 @@ import './style.css';
 import { appendHome } from "./home";
 import { appendMenu } from './menu';
 import { appendContact } from './contact';
+import { appendAbout } from './about';
 
 const contentDOM = document.querySelector('#content');
 
@@ -38,6 +39,13 @@ const eventListeners = (() => {
         else {
             removeContent();
             appendContact();
+        };
+    });
+    buttonDOMs.about.addEventListener('click', () => {
+        if (contentDOM.className === 'about') return
+        else {
+            removeContent();
+            appendAbout();
         };
     });
 })();
