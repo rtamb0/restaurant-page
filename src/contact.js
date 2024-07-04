@@ -8,6 +8,23 @@ const headContent = (title) => {
     return header;
 }
 
+//Creates the form element with the ability to add bold text on it
+const formContent = (text) => {
+    const bold = document.createElement('strong');
+
+    const p = document.createElement('p');
+    p.innerHTML = text;
+    bold.appendChild(p);
+    
+    const form = document.createElement('form');
+    form.className = 'contactBody';
+    form.setAttribute('method', 'get');
+
+    form.appendChild(bold);
+
+    return form;
+}
+
 const inputs = {
     // Creates the placeholder text for the inputs
     placeholderText: function(text, input) {
@@ -55,10 +72,8 @@ const inputs = {
 const appendContact = () => {
     contentDOM.appendChild(headContent("Contact Us"));
 
-    const inputContainer = document.createElement('form');
-    inputContainer.className = 'contactBody';
-    inputContainer.setAttribute('method', 'get');
-    
+    const inputContainer = formContent("All fields in this form are mandatory");
+
     inputContainer.appendChild(inputs.content('Name', 'text'));
     inputContainer.appendChild(inputs.content('Email', 'email'));
     inputContainer.appendChild(inputs.content('Describe here', 'textarea'));
