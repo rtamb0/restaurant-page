@@ -8,35 +8,43 @@ const headContent = (title) => {
     return header;
 }
 
-// Creates the inputs
-const inputContent = (name, type) => {
-    let label;
-    if (type !== 'submit') {
-        label = document.createElement('label');
-        label.innerHTML = name;
-        label.setAttribute('for', name);
-    };
-    
-    let input;
-    if (type === 'textarea') {
-        input = document.createElement('textarea');
-        input.setAttribute('rows', "10");
-        input.setAttribute('columns', "50");
-    } else input = document.createElement('input');
-    input.setAttribute('type', type);
-    if (type === 'submit') input.setAttribute('value', name)
-    else {
-        input.setAttribute('id', name);
-        input.setAttribute('name', name);
-        input.setAttribute('required', "");
-    };
-    
-    const section = document.createElement('div');
-    if (type !== 'submit') section.appendChild(label);
-    section.appendChild(input);
-    section.className = name.toLowerCase().split(" ").join("");
-    
-    return section;
+const inputs = {
+    // Creates the placeholder text for the inputs
+    placeholderText: function(text, input) {
+        input.setAttribute('placeholder', text);
+    },
+    // Creates the inputs
+    content: function(name, type) {
+        let label;
+        if (type !== 'submit') {
+            label = document.createElement('label');
+            label.innerHTML = name;
+            label.setAttribute('for', name);
+        };
+        
+        let input;
+        if (type === 'textarea') {
+            input = document.createElement('textarea');
+            input.setAttribute('rows', "10");
+            input.setAttribute('columns', "50");
+        } else {
+            input = document.createElement('input');
+            input.setAttribute('type', type);
+        };
+        if (type === 'submit') input.setAttribute('value', name)
+        else {
+            input.setAttribute('id', name);
+            input.setAttribute('name', name);
+            input.setAttribute('required', "");
+        };
+        
+        const section = document.createElement('div');
+        if (type !== 'submit') section.appendChild(label);
+        section.appendChild(input);
+        section.className = name.toLowerCase().split(" ").join("");
+        
+        return section;
+    }
 }
 
 const appendContact = () => {
@@ -46,10 +54,10 @@ const appendContact = () => {
     inputContainer.className = 'contactBody';
     inputContainer.setAttribute('method', 'get');
     
-    inputContainer.appendChild(inputContent('Name', 'text'));
-    inputContainer.appendChild(inputContent('Email', 'email'));
-    inputContainer.appendChild(inputContent('Describe here', 'textarea'));
-    inputContainer.appendChild(inputContent('Confirm', 'submit'));
+    inputContainer.appendChild(inputs.content('Name', 'text'));
+    inputContainer.appendChild(inputs.content('Email', 'email'));
+    inputContainer.appendChild(inputs.content('Describe here', 'textarea'));
+    inputContainer.appendChild(inputs.content('Confirm', 'submit'));
 
     contentDOM.appendChild(inputContainer);
     
