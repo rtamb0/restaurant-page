@@ -41,7 +41,7 @@ const inputs = {
         
         if (type === "text") this.placeholderText("John Smith", input);
         if (type === "email") this.placeholderText("example@hello.com", input);
-        if (type === "textarea") this.placeholderText("Describe your enquires here...", input);
+        if (type === "textarea") this.placeholderText("Describe your enquiries here...", input);
 
         const section = document.createElement('div');
         if (type !== 'submit') section.appendChild(label);
