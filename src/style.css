@@ -131,6 +131,10 @@ section.headHome {
     border-radius: 12px;
 }
 
+.contactBody p {
+    margin: 0;
+}
+
 .contactBody div {
     display: flex;
     flex-direction: column;
@@ -138,9 +142,27 @@ section.headHome {
 }
 
 .contactBody input, .contactBody textarea {
+    border: 2px;
     border-radius: 12px;
-    border-style: none;
+    border-style: solid;
+    border-color: var(--grey);
     padding: 12px 8px;
+}
+
+.contactBody input:focus, .contactBody textarea:focus  {
+    outline: none;
+}
+
+.contactBody input:user-invalid, .contactBody textarea:user-invalid {
+    border-color: red;
+}
+
+.contactBody input:user-valid, .contactBody textarea:user-valid {
+    border-color: green;
+}
+
+.contactBody input[type='submit'] {
+    border-style: none;
 }
 
 header {
