@@ -46,12 +46,12 @@ const appendMenu = () => {
     const bodyContainer = document.createElement('section');
     bodyContainer.className = 'bodyMenu';
     
-    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu1, "A pic of caesar salad", "$10.99"));
-    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu2, "A pic of chicken tenders", "$6.99"));
-    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu3, "A pic of pasta", "$15.99"));
-    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu4, "A pic of chocolate cake", "$8.99"));
-    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu5, "A pic of lamb chops", "$17.99"));
-    bodyContainer.appendChild(bodyContent("Lorem Ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...", menu6, "A pic of pancakes", "$3.99"));
+    bodyContainer.appendChild(bodyContent("Big Caesar Salad", "Crafted meticulously, this large portion of caesar salad includes lettuce, parmesan cheese, grilled chicken, bacon strip. And of course, caesar dressing.", menu1, "A pic of caesar salad", "$10.99"));
+    bodyContainer.appendChild(bodyContent("Chicken Tenders", "Your usual chicken tenders, made by us! Includes lettuce and a dipping sauce of your choice.", menu2, "A pic of chicken tenders", "$6.99"));
+    bodyContainer.appendChild(bodyContent("Fettuccine Pasta", "This creamy fettuccine pasta will satisfy your taste buds in every way possible. Includes chicken of your choice.", menu3, "A pic of pasta", "$15.99"));
+    bodyContainer.appendChild(bodyContent("Chocolate Cake", "A room for chocolate cake always exists on your stomatch. Can add an ice cream on top of it for additional $3.99.", menu4, "A pic of chocolate cake", "$8.99"));
+    bodyContainer.appendChild(bodyContent("Lamb Chops", "Do you want to eat meat but not beef nor pork. Then try our lambs. Cooked to perfection with out finest chefs, our lamb will change your taste buds chemistry.", menu5, "A pic of lamb chops", "$17.99"));
+    bodyContainer.appendChild(bodyContent("Pancakes", "Want something to eat but you're in a budget right now? Our pancakes will do. Variety of sauces are available for you to pick.", menu6, "A pic of pancakes", "$3.99"));
     contentDOM.appendChild(bodyContainer);
     
     contentDOM.className = "menu";    
