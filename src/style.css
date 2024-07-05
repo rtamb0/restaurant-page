@@ -98,14 +98,20 @@ section.headHome {
 .bodyMenu {
     display: grid;
     grid-template-columns: repeat(3, 20rem);
-    grid-auto-rows: 32rem;
-    gap: 5rem;
+    gap: 32px;
     justify-content: center;
+    align-items: center;
     margin: 50px;
 }
 
 .bodyMenu img {
     width: 200px;
+}
+
+.bodyMenu h5 {
+    text-align: end;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .contact {
