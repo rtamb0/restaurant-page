@@ -237,6 +237,11 @@ nav button:active {
     background-color: var(--brown);
 }
 
+.home+header nav #home,  .menu+header nav #menu, .contact+header nav #contact, .about+header nav #about {
+    background-color: var(--brown);
+    scale: 1.2;
+}
+
 button img {
     width: 2rem;
     height: 2rem;
