@@ -57,6 +57,7 @@ section.headHome {
     row-gap: 16px;
     column-gap: 64px;
     margin: 50px;
+    margin-bottom: 0;
 }
 
 .bodyHome div, .bodyMenu div, .bodyAbout div {
