@@ -177,6 +177,15 @@ section.headHome {
     border-style: none;
 }
 
+.contactBody input[type='submit']:hover {
+    background-color: var(--brown);
+    scale: 1.05;
+}
+
+.contactBody input[type='submit']:active {
+    background-color: var(--vanilla);
+}
+
 .bodyAbout {
     display: grid;
     grid-template-rows: repeat(5, 15rem);
