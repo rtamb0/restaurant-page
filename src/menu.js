@@ -16,20 +16,25 @@ const headContent = (title) => {
 }
 
 // Creates the menu cards
-const bodyContent = (title, text, pic) => {
+const bodyContent = (title, text, pic, altText, cost) => {
     const img = document.createElement('img');
     img.setAttribute('src', pic);
+    img.setAttribute('alt', altText);
     
     const header = document.createElement('h3');
     header.innerHTML = title;
     
     const description = document.createElement('p');
     description.innerHTML = text;
+
+    const price = document.createElement('p');
+    price.innerHTML = cost;
     
     const section = document.createElement('div');
     section.appendChild(img);
     section.appendChild(header);
     section.appendChild(description);
+    section.appendChild(price);
     
     return section;
 }
