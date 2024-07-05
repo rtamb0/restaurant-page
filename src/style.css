@@ -12,6 +12,7 @@
     --white: white;
     --vanilla: beige;
     --grey: gainsboro;
+    line-height: 1.5rem;
 }
 
 body {
@@ -40,11 +41,11 @@ section.headHome {
 
 .headHome h1 {
     font-size: 7rem;
-    margin: 0;
+    letter-spacing: 0.2rem;
 }
 
-.headhome p {
-    font-size: 1rem;
+.headHome p {
+    font-size: 1.2rem;
 }
 
 .bodyHome {
